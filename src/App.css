@@ -1,0 +1,65 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.app{
+  background-color: #fafafa;
+  width: 100%;
+
+}
+.app_header{
+  position: sticky;
+  top:0;
+  z-index:100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  object-fit: contain;
+  padding: 0px 20px ;
+  border-bottom: 3px solid lightgray;
+}
+.app_headerImage{
+  height: 50px;
+  cursor: pointer;
+  
+}
+.app_headerImage > img {
+  height: 50px;
+}
+.app_headerInput{
+  flex: .5;
+  display: flex;
+  align-items: center;
+  background-color: #fafafa;
+  border: 1px solid lightgray;
+}
+.app_headerInput > input{
+  background-color: #fafafa;
+  flex: 1;
+  border: none;
+  outline: none;
+}
+.app_headerInput > .MuiSvgIcon-root{
+  padding-right: 10px;
+  padding-left: 10px;
+  background-color: #eeeaea;
+}
+.form_hid_but{
+  display: none;
+}
+.app_body{
+  display: flex;
+}
+.login_header{
+  display: flex;
+}
+.app_posts{
+  display:flex;
+}
+.app_postsleft{
+  flex:.70;
+}
+.app_postsright{
+  flex:.30;
+}

@@ -1,0 +1,55 @@
+.bottombar_captionform{
+    margin-top: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    background-color: #fafafa;
+    border-radius: 60px;
+    border: 2px solid lightgray;
+    overflow: hidden;
+}
+.bottombar_captionform > .caption_input{
+    outline: none;
+    border: 1px solid transparent;
+    padding: 10px;
+    flex: 1;
+    background-color:#f0eded;
+    transition: .7s cubic-bezier(0.075, 0.82, 0.165, 1);
+    
+}
+.bottombar_captionform > .file_input{
+    outline: none;
+    border: 1px solid transparent;
+    padding: 10px;
+    background-color:#5170ad;
+    transition: .7s cubic-bezier(0.075, 0.82, 0.165, 1);
+    
+}
+.bottombar_captionform > input:focus{
+ background-color: #e7e5e5;
+ border: 1px solid lightgray;
+}
+.bottombar_captionform > .MuiSvgIcon-root{
+   color: black;
+  padding-left: 10px;
+}
+.hidden{
+    display: none;
+}
+.imgupload{
+    display: flex;
+    flex-direction: column;
+    
+}
+.bottomlodiv{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+.progress{
+    width: 100%;
+}
