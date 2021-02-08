@@ -169,7 +169,7 @@ function App() {
           <img className="app_headerImage" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/1200px-Instagram_logo.svg.png" alt="Instagram logo.svg"/>
           <form className="app_headerInput">
              <SearchIcon/>
-             <input  type="text" placeholder /> 
+             <input  type="text" placeholder="search posts" /> 
              <button  type="submit" className="form_hid_but" onClick={handleformsubmit}></button>
           </form>
           <div className="app_headerLogin">
