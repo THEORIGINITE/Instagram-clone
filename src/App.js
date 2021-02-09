@@ -23,6 +23,7 @@ function App() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [userName, setUserName] = useState("");
+  const [search, setSearch] = useState("");
   const [user, setUser] = useState(null);
 
 
@@ -169,7 +170,7 @@ function App() {
           <img className="app_headerImage" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/1200px-Instagram_logo.svg.png" alt="Instagram logo.svg"/>
           <form className="app_headerInput">
              <SearchIcon/>
-             <input  type="text" placeholder="search posts" /> 
+             <input  type="text" placeholder="search posts" onChange={(e)=> setSearch(e.target.value)}/> 
              <button  type="submit" className="form_hid_but" onClick={handleformsubmit}></button>
           </form>
           <div className="app_headerLogin">
