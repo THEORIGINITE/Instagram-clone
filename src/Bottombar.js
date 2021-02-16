@@ -7,7 +7,9 @@ import './Bottombar.css';
 import IconButton from '@material-ui/core/IconButton';
 import Fab from '@material-ui/core/Fab';
 import {Button} from '@material-ui/core'
+import LinearBuffer from './ProgressBar';
 import {db, storage} from './Firebase';
+import LinearProgress from '@material-ui/core/LinearProgress';
 import firebase from 'firebase';
 import AddIcon from '@material-ui/icons/Add';
 import SearchIcon from '@material-ui/icons/Search';
@@ -86,10 +88,11 @@ export default function Bottombar({userName}) {
      
   })
  }
+ 
   return (
       <AppBar position="fixed" color="primary" className={classes.appBar}>
-        <progress className="progress" value={progress} max="100"></progress>
         <Toolbar>
+          <LinearBuffer progress={progress}/>
           <IconButton edge="start" color="inherit" aria-label="open drawer">
           </IconButton>
         <form className="bottombar_captionform">

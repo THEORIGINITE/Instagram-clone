@@ -53,6 +53,7 @@
 }
 .login_header{
   display: flex;
+  flex-direction: column;
 }
 .app_posts{
   display:flex;
@@ -62,4 +63,21 @@
 }
 .app_postsright{
   flex:.30;
+}
+
+@media screen and (max-width: 600px) {
+  .app_posts{
+    display:flex;
+    justify-content: center;
+  }
+  .app_postsleft{
+    flex: 1;
+  }
+  .app_postsright{
+   display: none;
+  }
+  .app_headerInput{
+    display: none;
+   
+  }
 }
